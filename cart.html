@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="total_sum">Total sum is:</div>
+    <div id="order_list" style="display:none"></div>
+    <button id="btn_order">Make an order</button>
+    <div class="container">
+        <div id="products_list"></div>
+    </div>
+    <script type="text/javascript"
+             src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+            (function(){
+                        emailjs.init("vBD_jJrt-DjpBKgtd");
+    })();
+    </script>
+    <script src="cart.js"></script>
+</body>
+</html>
